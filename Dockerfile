@@ -4,8 +4,9 @@ RUN dpkg --add-architecture i386 && \
 	apt-get update && \
 	apt-get upgrade -y && \	
 	apt-get install wget libbz2-1.0:i386 libxt6:i386 libc6:i386 libfontconfig1:i386 libfreetype6:i386 libgcc1:i386 libice6:i386 libsm6:i386 libstdc++6:i386 libx11-6:i386 libxcursor1:i386 libxext6:i386 libxft2:i386 libxi6:i386 libxinerama1:i386 libxrandr2:i386 libxrender1:i386 zlib1g:i386 fontconfig:i386 -y && \
-	mkdir -p /opt/beyond_compare_4/ && \
-	wget http://www.scootersoftware.com/bcompare-4.0.7.19761_i386.deb -O /opt/beyond_compare_4/bcompare.deb
+	mkdir -p /opt/beyond_compare_4/
+
+RUN	wget http://www.scootersoftware.com/bcompare-4.0.7.19761_i386.deb -O /opt/beyond_compare_4/bcompare.deb
 
 RUN	dpkg -i /opt/beyond_compare_4/bcompare.deb
 
