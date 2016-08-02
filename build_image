@@ -1,2 +1,2 @@
 #!/bin/bash
-docker build -t bc4 .
+docker build -t milanaleksic/bc4 .

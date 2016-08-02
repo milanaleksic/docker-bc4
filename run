@@ -4,4 +4,4 @@ docker run -ti --rm \
   -e DISPLAY=$DISPLAY \
   -v /media/milan/:/media/milan/ \
   -v /tmp/.X11-unix:/tmp/.X11-unix \
-  bc4
+  milanaleksic/bc4
