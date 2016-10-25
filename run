@@ -7,4 +7,4 @@ docker run -ti --rm \
   -v /tmp/.X11-unix:/tmp/.X11-unix \
   --group-add audio \
   --device /dev/snd \
-  milanaleksic/bc4
+  milanaleksic/docker-bc4:4.1.9
