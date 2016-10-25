@@ -1,4 +1,8 @@
-# Preconditions
+# Beyond Compare 4
+
+This is a docker image definition that allows you to run Beyond Compare 4 in isolated, container  mode
+
+## Preconditions
 
 - Verified it works on Ubuntu 15.10 and Debian 8
 - Verified it works on Docker 1.9
