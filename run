@@ -2,6 +2,9 @@
 
 docker run -ti --rm \
   -e DISPLAY=$DISPLAY \
+  -e QT_GRAPHICSSYSTEM="native" \
   -v /media/milan/:/media/milan/ \
   -v /tmp/.X11-unix:/tmp/.X11-unix \
+  --group-add audio \
+  --device /dev/snd \
   milanaleksic/bc4
